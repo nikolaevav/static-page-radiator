@@ -1,0 +1,105 @@
+---
+title: 1920_1080_Product.jpg
+body_class: main
+---
+.container
+  .content
+    .row-fluid
+      .span2
+        = partial 'left_column'
+      .span10
+        = partial 'navigation'
+        .product-menu
+          .row-fluid
+            = link_to '/', class: 'span4' do
+              .product-menu-item.active Алюминиевые радиаторы
+            = link_to '/', class: 'span4' do
+              .product-menu-item Биметалические радиаторы
+            = link_to '/', class: 'span4' do
+              .product-menu-item Стальные панельные радиаторы
+        .body-info
+          .product-item-nav
+            .row-fluid
+              .span3.product-item-nav-select
+                %li.dropdown
+                  %select.j-cusel-change.cuselmin
+                    %option{ value: "0"} Torido 350
+                    %option{ value: "1"} Torido 450
+                    %option{ value: "2"} Torido 550
+                    %option{ value: "3"} Torido 650
+
+              .span3.product-item-nav-link.short-word
+                = link_to '/' do
+                  описание
+              .span3.product-item-nav-link.active технические характиристики
+              .span3.product-item-nav-link
+                = link_to '/' do
+                  сопутствующие документы
+          .body-info-content.product-block
+            .row-fluid
+              .span3.product-block-image
+                %img.img-big{ src: 'http://am111.ru/im_admin/images/upload/5e8f8346cb3daf7e02713613efa37642.jpg' }
+                %img.img-small{ src: 'http://am111.ru/im_admin/images/upload/5e8f8346cb3daf7e02713613efa37642.jpg' }
+                %img.img-small{ src: 'http://am111.ru/im_admin/images/upload/5e8f8346cb3daf7e02713613efa37642.jpg' }
+              .span9
+                .block-scroll.j-scroll-block
+                  .scrollbar
+                    .track
+                      .thumb
+                  .viewport
+                    .overview
+                      .product-block-text.hide
+                        %p Предполагается, что подобные «SIM-карты» можно встраивать не в мобильные телефоны, а в другие устройства для M2M-коммуникаций (Machine to Machine) в рамках «Интернета вещей». Представители ассоциации GSMA не хотят, чтобы операторы связи использовали новый стандарт для физической привязки телефона к определенной сотовой сети. Наоборот, интегрированные SIM-карты можно будет удалённо перепрограммировать на любую сеть. Тем не менее, себестоимость мобильных телефонов снизится, если SIM-карты будут вшиты на уровне микросхемы.
+                        %p Предполагается, что подобные «SIM-карты» можно встраивать не в мобильные телефоны, а в другие устройства для M2M-коммуникаций (Machine to Machine) в рамках «Интернета вещей». Представители ассоциации GSMA не хотят, чтобы операторы связи использовали новый стандарт для физической привязки телефона к определенной сотовой сети. Наоборот, интегрированные SIM-карты можно будет удалённо перепрограммировать на любую сеть. Тем не менее, себестоимость мобильных телефонов снизится, если SIM-карты будут вшиты на уровне микросхемы.
+                        %p Предполагается, что подобные «SIM-карты» можно встраивать не в мобильные телефоны, а в другие устройства для M2M-коммуникаций (Machine to Machine) в рамках «Интернета вещей». Представители ассоциации GSMA не хотят, чтобы операторы связи использовали новый стандарт для физической привязки телефона к определенной сотовой сети. Наоборот, интегрированные SIM-карты можно будет удалённо перепрограммировать на любую сеть. Тем не менее, себестоимость мобильных телефонов снизится, если SIM-карты будут вшиты на уровне микросхемы.
+                      .product-block-tech
+                        .product-block-tech-title &nbsp;
+                        .product-block-tech-item TORIDO 350
+                        .product-block-tech-item TORIDO 550
+                        .product-block-tech-item.hide TORIDO 650
+                        .product-block-tech-item.hide TORIDO 750
+                      .product-block-tech
+                        .product-block-tech-title Высота секции
+                        .product-block-tech-item 431 мм
+                        .product-block-tech-item 513 мм
+                        .product-block-tech-item.hide 612 мм
+                        .product-block-tech-item.hide 712 мм
+                      .product-block-tech
+                        .product-block-tech-title Ширина секции
+                        .product-block-tech-item 80 мм
+                        .product-block-tech-item 80 мм
+                        .product-block-tech-item.hide 80 мм
+                        .product-block-tech-item.hide 80 мм
+                      .product-block-tech
+                        .product-block-tech-title Глубина секции
+                        .product-block-tech-item 98 мм
+                        .product-block-tech-item 100 мм
+                        .product-block-tech-item.hide 102 мм
+                        .product-block-tech-item.hide 105 мм
+                      .product-block-tech
+                        .product-block-tech-title Межосевое расстояние
+                        .product-block-tech-item 350 мм
+                        .product-block-tech-item 550 мм
+                        .product-block-tech-item.hide 650 мм
+                        .product-block-tech-item.hide 750 мм
+                      .product-block-tech
+                        .product-block-tech-title Теплоотдача секции
+                        .product-block-tech-item 136 Ватт
+                        .product-block-tech-item 180 Ватт
+                        .product-block-tech-item.hide 250 Ватт
+                        .product-block-tech-item.hide 400 Ватт
+                      .product-block-tech
+                        .product-block-tech-title Рабочее давление
+                        .product-block-tech-item 14 атм
+                        .product-block-tech-item 15 атм
+                        .product-block-tech-item.hide 16 атм
+                        .product-block-tech-item.hide 17 атм
+                      .product-block-tech
+                        .product-block-tech-title Гарантия производителя
+                        .product-block-tech-item 10 лет
+                        .product-block-tech-item 10 лет
+                        .product-block-tech-item.hide 10 лет
+                        .product-block-tech-item.hide 10 лет
+
+
+    = partial 'footer'

@@ -1,0 +1,47 @@
+---
+title: 1920_1080_Podbor.jpgs
+body_class: main
+---
+.container
+  .content
+    .row-fluid
+      .span2
+        = partial 'left_column'
+      .span10
+        = partial 'navigation'
+        .body-info
+          .body-info-nav
+            .podbor-nav
+              .yellow-text подбираем
+              .yellow-line
+              радиатор
+          .body-info-content
+            .row-fluid
+              .span12.body-info-content-text
+                .podbor-block
+                  .row-fluid
+                    .span7
+                      %img{ src: 'images/step0.png'}
+                    .span4
+                      %form.podbor-form{ method: 'get', action: 'podbor1.html'}
+                        .podbor-form-title
+                          Желаемая температура в помещении, &deg;С
+                        .podbor-form-input
+                          %input{ type: "text", class: "span5" }
+                        .podbor-form-send
+                          %button.btn далее
+                  .row-fluid
+                    .span12
+                      .podbor-indicators
+                        %li.active
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+
+    = partial 'footer'

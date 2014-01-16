@@ -1,0 +1,29 @@
+---
+title: torido_info.jpg
+body_class: main
+---
+.container
+  .content
+    .row-fluid
+      .span2
+        = partial 'left_column'
+      .span10
+        = partial 'navigation'
+        .body-info
+          = partial 'body_info_menu'
+          .body-info-content
+            .row-fluid
+              .span4.body-info-content-image
+                %img.image-with-radius{ src: 'http://www.torido.ru/upload/medialibrary/726/toridofactory.jpg' }
+              .span8.body-info-product-text
+                .block-scroll.j-scroll-block
+                  .scrollbar
+                    .track
+                      .thumb
+                  .viewport
+                    .overview
+                      %p Предполагается, что подобные «SIM-карты» можно встраивать не в мобильные телефоны, а в другие устройства для M2M-коммуникаций (Machine to Machine) в рамках «Интернета вещей». Представители ассоциации GSMA не хотят, чтобы операторы связи использовали новый стандарт для физической привязки телефона к определенной сотовой сети. Наоборот, интегрированные SIM-карты можно будет удалённо перепрограммировать на любую сеть. Тем не менее, себестоимость мобильных телефонов снизится, если SIM-карты будут вшиты на уровне микросхемы.
+
+                      %p К тому же, производителям миниатюрных мобильных устройств (например, Apple) больше не придётся решать проблему, как вместить в них SIM-карту.
+
+    = partial 'footer'

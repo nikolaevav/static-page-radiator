@@ -1,0 +1,58 @@
+---
+title: 1920_1080_Podbor-1.jpg
+body_class: main
+---
+.container
+  .content
+    .row-fluid
+      .span2
+        = partial 'left_column'
+      .span10
+        = partial 'navigation'
+        .body-info
+          .body-info-nav
+            .podbor-nav
+              .yellow-text подбираем
+              .yellow-line
+              радиатор
+          .body-info-content
+            .row-fluid
+              .span12.body-info-content-text
+                .podbor-block
+                  .row-fluid
+                    .span7
+                      %img{ src: 'images/step1.png'}
+                    .span3
+                      %form.podbor-form{ method: 'get', action: 'podbor2.html'}
+                        .podbor-form-title
+                          Тип дома
+                        .podbor-form-input
+                          .group-radio
+                            %input.hide{ name: "option", type: "radio", value: '0', id: 'r1' }
+                            %label.radio-image.j-radio-check{ for: "r1" }
+                              .radio-image-off
+                              .radio-image-on
+                            %label.j-radio-check{ for: "r1" } Многоквартирный
+                          .group-radio
+                            %input.hide{ name: "option", type: "radio", value: '1', id: 'r2' }
+                            %label.radio-image.j-radio-check{ for: "r2" }
+                              .radio-image-off
+                              .radio-image-on
+                            %label.j-radio-check{ for: "r2" } Коттедж
+                        .podbor-form-send
+                          %button.btn далее
+                  .row-fluid
+                    .span12
+                      .podbor-indicators
+                        %li
+                        %li.active
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+                        %li
+
+    = partial 'footer'

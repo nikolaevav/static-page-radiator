@@ -1,0 +1,50 @@
+.navigation
+  .nav-dot
+    .start
+      .white-dot
+    .dot-test ............................................................
+    .stop
+      .white-dot
+  .row-fluid
+    = link_to '/', class: 'nav-link span2' do
+      .nav-item
+        .nav-item-text
+          .yellow-text-center &nbsp;
+          %span.yellow-line
+          Главная
+        .yellow-dot
+    = link_to 'news.html', class: 'nav-link span2' do
+      .nav-item.active
+        .nav-item-text
+          .yellow-text-right читаем
+          %span.yellow-line
+          Новости
+        .yellow-dot
+    = link_to 'products.html', class: 'nav-link span2' do
+      .nav-item.active
+        .nav-item-text
+          .yellow-text-center выбираем
+          %span.yellow-line
+          Продукция
+        .yellow-dot
+    = link_to 'info_production.html', class: 'nav-link span2' do
+      .nav-item.active
+        .nav-item-text
+          .yellow-text-left изучаем
+          %span.yellow-line
+          Информация
+        .yellow-dot
+    = link_to 'buy.html', class: 'nav-link span2' do
+      .nav-item.active
+        .nav-item-text
+          .yellow-text-center &nbsp;
+          %span.yellow-line
+          Где купить
+        .yellow-dot
+    = link_to '/', class: 'nav-link last span2' do
+      .nav-item
+        .nav-item-text
+          .yellow-text-center &nbsp;
+          %span.yellow-line
+          Форум
+        .yellow-dot

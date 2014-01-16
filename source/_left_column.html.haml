@@ -1,0 +1,28 @@
+= link_to '/' do
+  .logotip
+.logo-text
+  .logo-text-yellow
+    жаркий
+  .logo-text-white
+    радиатор
+.form-search
+  %form
+    .input-append
+      %input{ type: "text", placeholder: "ПОИСК" }
+      %button.btn{ type: "button"} >
+.widget-podbor
+  .widget-podbor-image
+  .widget-podbor-title
+    подобрать
+  .widget-podbor-subtitle
+    радиатор
+  .widget-podbor-desc
+    Воспользуйтесь возможностью выбора радиатора конкретно под ваши задачи
+  .widget-podbor-send
+    = link_to 'подобрать', 'podbor.html', class: 'btn'
+.widget-contact
+  = link_to '/' do
+    .widget-contact-image
+  = link_to '/' do
+    .widget-contact-text
+      Контакты

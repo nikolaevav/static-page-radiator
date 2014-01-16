@@ -1,0 +1,159 @@
+---
+title: 1920_1080_map.jpgs
+body_class: main
+---
+.container
+  .content
+    .row-fluid
+      .span2
+        = partial 'left_column'
+      .span10
+        = partial 'navigation'
+        .body-info
+          .body-info-nav
+            .podbor-nav
+              .yellow-text выбираем
+              .yellow-line
+              где купить
+            .company-nav
+              %li.dropdown
+                .yellow-text
+                  область
+                %select.j-cusel-change.cuselbig
+                  %option{ value: "0"} Московская область
+                  %option{ value: "1"} Нижегородская область
+                  %option{ value: "2"} Татарстанская область
+                  %option{ value: "3"} Ульяновская область
+                  %option{ value: "0"} Московская область
+                  %option{ value: "1"} Нижегородская область
+                  %option{ value: "2"} Татарстанская область
+                  %option{ value: "3"} Ульяновская область
+                  %option{ value: "0"} Московская область
+                  %option{ value: "1"} Нижегородская область
+                  %option{ value: "2"} Татарстанская область
+                  %option{ value: "3"} Ульяновская область
+                  %option{ value: "0"} Московская область
+                  %option{ value: "1"} Нижегородская область
+                  %option{ value: "2"} Татарстанская область
+                  %option{ value: "3"} Ульяновская область
+
+              %li.dropdown
+                .yellow-text
+                  Город
+                %select.j-cusel-change.cuselmiddle
+                  %option{ value: "0"} Набережные челны
+                  %option{ value: "1"} Казань
+                  %option{ value: "2"} Москва
+                  %option{ value: "3"} Воскресенск
+                  %option{ value: "0"} Нижний новгород
+                  %option{ value: "0"} Набережные челны
+                  %option{ value: "1"} Казань
+                  %option{ value: "2"} Москва
+                  %option{ value: "3"} Воскресенск
+                  %option{ value: "0"} Нижний новгород
+                  %option{ value: "0"} Набережные челны
+                  %option{ value: "1"} Казань
+                  %option{ value: "2"} Москва
+                  %option{ value: "3"} Воскресенск
+                  %option{ value: "0"} Нижний новгород
+              %li.dropdown
+                .yellow-text
+                  тип точки продаж
+                %select.j-cusel-change.cuselmin
+                  %option{ value: "0"} розница
+                  %option{ value: "1"} опт И розница
+                  %option{ value: "2"} опт
+
+          .body-info-content
+            .row-fluid
+              .span4.company-block
+                .block-scroll.j-scroll-block
+                  .scrollbar
+                    .track
+                      .thumb
+                  .viewport
+                    .overview
+                      .company-block-item
+                        .company-block-title
+                          Дюйм-Химки
+                        .company-block-adress
+                          Москва, Московская область, г.Химки, Вашутинское шоссе, 36
+                        .company-block-phone
+                          Тел.: (495) 787-71-48
+                          %br
+                          Факс.: (495) 787-71-41
+                        .company-block-email
+                          = link_to '/' do
+                            Email: duim@duim.ru
+                      .company-block-item
+                        .company-block-title
+                          Дюйм-Химки
+                        .company-block-adress
+                          Москва, Московская область, г.Химки, Вашутинское шоссе, 36
+                        .company-block-phone
+                          Тел.: (495) 787-71-48
+                          %br
+                          Факс.: (495) 787-71-41
+                        .company-block-email
+                          = link_to '/' do
+                            Email: duim@duim.ru
+                      .company-block-item
+                        .company-block-title
+                          Дюйм-Химки
+                        .company-block-adress
+                          Москва, Московская область, г.Химки, Вашутинское шоссе, 36
+                        .company-block-phone
+                          Тел.: (495) 787-71-48
+                          %br
+                          Факс.: (495) 787-71-41
+                        .company-block-email
+                          = link_to '/' do
+                            Email: duim@duim.ru
+                      .company-block-item
+                        .company-block-title
+                          Дюйм-Химки
+                        .company-block-adress
+                          Москва, Московская область, г.Химки, Вашутинское шоссе, 36
+                        .company-block-phone
+                          Тел.: (495) 787-71-48
+                          %br
+                          Факс.: (495) 787-71-41
+                        .company-block-email
+                          = link_to '/' do
+                            Email: duim@duim.ru
+                      .company-block-item
+                        .company-block-title
+                          Дюйм-Химки
+                        .company-block-adress
+                          Москва, Московская область, г.Химки, Вашутинское шоссе, 36
+                        .company-block-phone
+                          Тел.: (495) 787-71-48
+                          %br
+                          Факс.: (495) 787-71-41
+                        .company-block-email
+                          = link_to '/' do
+                            Email: duim@duim.ru
+
+              .span8
+                .map-company-icon
+                  .test-company-icon
+                    .test-company-info
+                      .company-block-title
+                        Дюйм-Химки
+                      .company-block-adress
+                        Москва, Московская область, г.Химки, Вашутинское шоссе, 36
+                      .company-block-phone
+                        Тел.: (495) 787-71-48
+                        %br
+                        Факс.: (495) 787-71-41
+                      .company-block-email
+                        = link_to '/' do
+                          Email: duim@duim.ru
+                .map-company#companyMap{ style: "margin: 10px 10px 10px 0;" }
+                :javascript
+                  // Создаем обработчик загрузки страницы: 
+                  DG.autoload(function() {
+                    var myMap = new DG.Map('companyMap');
+                    myMap.setCenter(new DG.GeoPoint(37.617634, 55.755787), 10);
+                  });
+    = partial 'footer'

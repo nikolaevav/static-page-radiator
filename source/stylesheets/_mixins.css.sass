@@ -1,0 +1,103 @@
+// Placeholder text
+// -------------------------
+@mixin placeholder($color: $placeholderText)
+  &:-moz-placeholder
+    color: $color
+  
+  &:-ms-input-placeholder
+    color: $color
+  
+  &::-webkit-input-placeholder
+    color: $color
+
+
+// Text overflow
+// -------------------------
+// Requires inline-block or block for proper styling
+@mixin text-overflow()
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+
+
+// Border Radius
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  border-radius: $radius
+
+
+
+// Single Corner Border Radius
+@mixin border-top-left-radius($radius)
+  -webkit-border-top-left-radius: $radius
+  -moz-border-radius-topleft: $radius
+  border-top-left-radius: $radius
+
+@mixin border-top-right-radius($radius)
+  -webkit-border-top-right-radius: $radius
+  -moz-border-radius-topright: $radius
+  border-top-right-radius: $radius
+
+@mixin border-bottom-right-radius($radius)
+  -webkit-border-bottom-right-radius: $radius
+  -moz-border-radius-bottomright: $radius
+  border-bottom-right-radius: $radius
+
+@mixin border-bottom-left-radius($radius)
+  -webkit-border-bottom-left-radius: $radius
+  -moz-border-radius-bottomleft: $radius
+  border-bottom-left-radius: $radius
+
+
+// Single Side Border Radius
+@mixin border-top-radius($radius)
+  @include border-top-right-radius($radius)
+  @include border-top-left-radius($radius)
+
+@mixin border-right-radius($radius)
+  @include border-top-right-radius($radius)
+  @include border-bottom-right-radius($radius)
+
+@mixin border-bottom-radius($radius)
+  @include border-bottom-right-radius($radius)
+  @include border-bottom-left-radius($radius)
+
+@mixin border-left-radius($radius)
+  @include border-top-left-radius($radius)
+  @include border-bottom-left-radius($radius)
+
+
+// Drop shadows
+@mixin box-shadow($shadow)
+  -webkit-box-shadow: $shadow
+  -moz-box-shadow: $shadow
+  box-shadow: $shadow
+
+
+// Background sizing
+@mixin background-size($size)
+  -webkit-background-size: $size
+  -moz-background-size: $size
+  -o-background-size: $size
+  background-size: $size
+
+
+// Box sizing
+@mixin box-sizing($boxmodel)
+  -webkit-box-sizing: $boxmodel
+  -moz-box-sizing: $boxmodel
+  box-sizing: $boxmodel
+
+
+// Opacity
+@mixin opacity($opacity)
+  opacity: $opacity
+  filter: alpha(opacity=$opacity * 100)
+
+// Centered container element
+@mixin container-fixed()
+  margin-right: auto
+  margin-left: auto
+  @include clearfix()

@@ -1,0 +1,49 @@
+---
+title: torido_info4.jpg
+body_class: main
+---
+.container
+  .content
+    .row-fluid
+      .span2
+        = partial 'left_column'
+      .span10
+        = partial 'navigation'
+        .body-info
+          = partial 'body_info_menu'
+          .body-info-content
+            .row-fluid
+              .span12.body-info-content-text
+                %form
+                  .row-fluid
+                    .span7
+                      .reklama-block
+                        .reklama-block-title
+                          Если вы хотите получить дополнительную информацию, заполните форму ниже
+                    .span6.offset3
+                      .reklama-block
+                        .reklama-block-form
+                          %input{ type: "text", placeholder: "ФАМИЛИЮ, ИМЯ И ОТЧЕСТВО", class: "input-block-level" }
+                          %input{ type: "text", placeholder: "НАЗВАНИЕ ОРГАНИЗАЦИИ", class: "input-block-level" }
+                          %input{ type: "text", placeholder: "КОНТАКТНЫЙ ТЕЛЕФОН", class: "input-block-level" }
+                          %input{ type: "text", placeholder: "ЭЛЕКТРОННАЯ ПОЧТА", class: "input-block-level" }
+                          %textarea{ rows: 7, placeholder: "ВАШЕ СООБЩЕНИЕ", class: "input-block-level" }
+                  .row-fluid
+                    .span12
+                      .reklama-block
+                        .reklama-block-captcha
+                          .row-fluid.reklama-block-captcha-title
+                            Защита от автоматических сообщений
+                          .row-fluid.reklama-block-captcha
+                            .span2.reklama-block-captcha-img
+                              .captcha-img
+                            .span7.offset1.reklama-block-captcha-form
+                              %input{ type: "text", placeholder: "ВВЕДИТЕ КОД КАК НА КАРТИНКЕ", class: "input-block-level" }
+                  .row-fluid
+                    .span10
+                      .reklama-block
+                        .reklama-block-send
+                          %button.btn{ type: "button"} отправить
+
+
+    = partial 'footer'
